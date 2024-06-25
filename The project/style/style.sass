@@ -1,0 +1,415 @@
+@import "varble && mixsin"
+*
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+
+.continer
+    padding: 0 60px
+    @include for-phone-only
+       padding: 0 30px
+
+    
+@import "varble && mixsin"
+*
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+
+.continer
+    padding: 0 60px
+    @include for-phone-only
+       padding: 0 30px
+
+    
+nav
+    height: 70px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    div
+        flex: 1
+        display: flex
+        justify-content: space-between
+        height: 100%
+        align-items: center
+        @include for-phone-only
+           display: none
+           &.activ
+             display: block
+             position: absolute
+             top: 70px
+             padding: 10px
+             background-color: $Dark-Violet
+             height: 400px
+             z-index: 3
+             width: 200Px
+             width: 350px
+             border-radius: 4px
+             left: 50%
+             transform: translateX(-50%)
+             ul
+                display: block
+        ul
+            flex: 1
+            display: flex
+            justify-content: flex-start
+            height: 100%
+            margin-left: 15px
+            @include for-phone-only
+               height: 50%
+               border-bottom: 1px solid $Grayish-Violet
+               margin-bottom: 30px
+            li
+                width: 11%
+                display: flex
+                align-items: center
+                justify-content: center
+                transition: 0.5s all
+                @include for-phone-only
+                 width: 100%
+                 height: 50px
+                 border: none
+                &:hover a
+                   
+                    color: $Dark-Violet 
+                a
+                        color: $Gray 
+                        font-weight: bold
+        span
+            @include for-phone-only
+               display: flex
+               flex-direction: column
+               justify-content: space-between
+               width: 100%
+               height: 50%
+            .tow
+               @include  button($Cyan)
+        
+               &:hover
+                @include  button-hover
+               @include for-phone-only
+                  margin: auto
+                  display: block
+            
+            .one
+                color: $Gray
+                border: none
+                background-color: white
+                margin-bottom: 0
+                margin-right: 10px
+                @include for-phone-only
+                    background-color: transparent 
+                    margin: auto
+                  
+  
+    .svg
+        cursor: pointer
+        @include for-desktop-up
+          display: none
+        .activ
+          display: none
+
+    
+    
+.mockups
+   display: flex
+   margin-left: 60px
+   overflow: hidden
+   padding: 60px 0
+   justify-content: space-between
+   height: 780px
+   @include for-phone-only
+      display: flex
+      flex-direction: column-reverse
+      justify-content: center
+      margin: 0
+      height: 780px
+
+      
+
+   .img
+    position: relative
+      
+    img
+        transform: translateX(20%) 
+        @include for-phone-only
+           transform: translateX(0%) 
+
+           position: relative
+           width: 100%
+           
+
+   .text
+        flex-basis: 70%
+        font-family: [Public Sans]
+        @include for-phone-only
+          margin-top:10px 
+          display: flex
+          flex-direction: column
+          gap: 20px
+        
+        h1
+          
+          font-size: 70px
+          font-weight: bold
+          @include for-phone-only
+             font-size: 30px
+             text-align: center
+             margin: auto
+             margin-bottom: 10px
+        p
+            color: $Grayish-Violet
+            font-weight: 500
+            max-width: 376px
+            line-height: 30px
+            margin-bottom: 29px
+            @include for-phone-only
+               text-align: center
+               margin: 0 auto
+
+        button
+                 
+                 @include  button($Cyan)
+                 &:hover
+                  @include  button-hover
+                 @include for-phone-only
+                   margin: auto
+.from
+    background-color:#eff1f7
+    padding: 60px
+    @include for-phone-only
+       padding: 30px
+
+    form
+        background-image: url("../images/b.svg")
+        background-color: $Dark-Violet
+        display: flex
+        align-items: center
+        justify-content: center
+        gap: 20px
+        height: 160px
+        border-radius: 4px
+        transform: translateY(-137px)
+        @include for-phone-only
+            transform: translateY(-115px)
+            display: flex
+            flex-direction: column
+            padding: 20px
+            
+
+        input
+            padding: 10px
+            width: 50%
+            @include for-phone-only
+                width: 100%
+
+        button
+             @include  button($Cyan)
+             border-radius: 4px
+             padding: 12px
+             @include for-phone-only
+                width: 100%
+
+
+             &:hover
+                @include  button-hover
+    div
+            display: block
+            margin-top: -110px
+            @include for-phone-only
+               margin-top: -100px
+            span
+                display: flex
+                width: 100%
+                padding: 12px
+                background-color: white
+                align-items: center
+                margin-bottom: 10px
+                @include for-phone-only
+                   display: flex
+                   padding: 12px
+                   background-color: white
+                   margin-bottom: 10px
+                   flex-direction: column
+                   align-items: baseline
+                   gap: 15px
+
+
+                p
+                    &:first-of-type
+                        flex: 1
+                        
+
+                    &:nth-of-type(2)
+                        color: $Cyan
+                        margin-right: 10px
+                button
+                     @include  button($Cyan)
+                     border-radius: 4px
+                     padding: 10px
+                     transition: 0.5S
+        
+                     &:hover
+                        background-color: $Dark-Violet
+
+.Advanced_Statistics
+    background-color:#eff1f7
+    padding: 60px 60px 100px
+    text-align: center
+    
+    p
+        color: $Grayish-Violet
+        max-width: 500px
+        margin: auto
+    .boxs
+        display: flex
+        margin-top: 30px
+        gap: 20px
+        padding: 20px
+        justify-content: center
+        @include for-phone-only
+            flex-direction: column
+        .box
+            background-color: white
+            border-radius: 4px
+            text-align: left
+            padding: 30px 20px
+            position: relative
+            @include for-phone-only
+               
+               display: flex
+               flex-direction: column
+               justify-content: center
+               align-items: center
+               text-align: center
+
+
+            div
+                border-radius: 50%
+                background-color: $Very-Dark-Blue
+                width: fit-content
+                height: fit-content
+                padding: 10px
+                padding: 8px 10px
+                transform: translateY(-63px)
+            h3
+                margin-top: -35px
+                margin-bottom: 20px
+            p
+                font-weight: 600
+                line-height: 24px
+
+            &:first-of-type::before,
+            &:nth-of-type(2)::after
+                content: ""
+                position: absolute
+                top: 50%
+                width: 50px
+                height: 5px
+                left: 100%
+                background-color: $Cyan
+                @include for-phone-only
+                   top: 100%
+                   width: 5px
+                   height: 50px
+                   left: 50%
+                   transform: translateX(-50%)
+
+
+            &:nth-of-type(2)
+                transform: translateY(33px)
+            &:nth-of-type(3)
+                transform: translateY(65px)
+.boost
+    background-color: $Dark-Violet
+    color: white
+    text-align: center
+    padding: 20px
+    background-image: url("../images/b.svg")
+    background-size: cover
+    button
+         @include  button($Cyan)
+         &:hover
+          @include  button-hover
+         @include for-phone-only
+           margin: auto
+.footer
+    display: flex
+    background-color: $Very-Dark-Violet
+    padding: 60px
+    @include for-phone-only
+       padding: 30Px
+       display: block
+       text-align: center
+
+    .one
+        flex-basis: 20%
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        @include for-phone-only
+            justify-content: center
+
+        
+        svg
+                
+                @include for-phone-only
+                  margin: 25px auto
+                
+                path
+                        fill: white
+
+    .tow
+        display: flex
+        justify-content: space-evenly
+        flex-basis: 60%
+        @include for-phone-only
+          display: block
+
+        ul
+            li
+                height: 25px
+                a
+                    color: $Grayish-Violet
+                    &:hover
+                        color:$Cyan
+                    &.activ
+                        color: white
+
+    .three
+        display: flex
+        gap: 15px
+        cursor: pointer
+        @include for-phone-only
+           width: 100%
+           margin-top: 20px
+           justify-content: center
+
+        
+             
+        
+
+
+
+
+    
+    
+
+            
+            
+
+                
+
+                
+                
+
+
+
+
+                        
+
+
+    
+
+ 

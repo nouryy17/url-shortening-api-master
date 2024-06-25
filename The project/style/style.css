@@ -1,0 +1,534 @@
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.continer {
+  padding: 0 60px;
+}
+@media (max-width: 1200px) {
+  .continer {
+    padding: 0 30px;
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.continer {
+  padding: 0 60px;
+}
+@media (max-width: 1200px) {
+  .continer {
+    padding: 0 30px;
+  }
+}
+
+nav {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav div {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  align-items: center;
+}
+@media (max-width: 1200px) {
+  nav div {
+    display: none;
+  }
+  nav div.activ {
+    display: block;
+    position: absolute;
+    top: 70px;
+    padding: 10px;
+    background-color: hsl(257, 27%, 26%);
+    height: 400px;
+    z-index: 3;
+    width: 200Px;
+    width: 350px;
+    border-radius: 4px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  nav div.activ ul {
+    display: block;
+  }
+}
+nav div ul {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  height: 100%;
+  margin-left: 15px;
+}
+@media (max-width: 1200px) {
+  nav div ul {
+    height: 50%;
+    border-bottom: 1px solid hsl(257, 7%, 63%);
+    margin-bottom: 30px;
+  }
+}
+nav div ul li {
+  width: 11%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s all;
+}
+@media (max-width: 1200px) {
+  nav div ul li {
+    width: 100%;
+    height: 50px;
+    border: none;
+  }
+}
+nav div ul li:hover a {
+  color: hsl(257, 27%, 26%);
+}
+nav div ul li a {
+  color: hsl(0, 0%, 75%);
+  font-weight: bold;
+}
+@media (max-width: 1200px) {
+  nav div span {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 50%;
+  }
+}
+nav div span .tow {
+  background: hsl(180, 66%, 49%);
+  color: white;
+  border-radius: 20px;
+  padding: 9px 23px;
+  border: none;
+  cursor: pointer;
+}
+nav div span .tow:hover {
+  opacity: 0.8;
+  transition: 0.5s;
+}
+@media (max-width: 1200px) {
+  nav div span .tow {
+    margin: auto;
+    display: block;
+  }
+}
+nav div span .one {
+  color: hsl(0, 0%, 75%);
+  border: none;
+  background-color: white;
+  margin-bottom: 0;
+  margin-right: 10px;
+}
+@media (max-width: 1200px) {
+  nav div span .one {
+    background-color: transparent;
+    margin: auto;
+  }
+}
+nav .svg {
+  cursor: pointer;
+}
+@media (min-width: 1200px) {
+  nav .svg {
+    display: none;
+  }
+}
+nav .svg .activ {
+  display: none;
+}
+
+.mockups {
+  display: flex;
+  margin-left: 60px;
+  overflow: hidden;
+  padding: 60px 0;
+  justify-content: space-between;
+  height: 780px;
+}
+@media (max-width: 1200px) {
+  .mockups {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    margin: 0;
+    height: 780px;
+  }
+}
+.mockups .img {
+  position: relative;
+}
+.mockups .img img {
+  transform: translateX(20%);
+}
+@media (max-width: 1200px) {
+  .mockups .img img {
+    transform: translateX(0%);
+    position: relative;
+    width: 100%;
+  }
+}
+.mockups .text {
+  flex-basis: 70%;
+  font-family: [Public Sans];
+}
+@media (max-width: 1200px) {
+  .mockups .text {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+.mockups .text h1 {
+  font-size: 70px;
+  font-weight: bold;
+}
+@media (max-width: 1200px) {
+  .mockups .text h1 {
+    font-size: 30px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 10px;
+  }
+}
+.mockups .text p {
+  color: hsl(257, 7%, 63%);
+  font-weight: 500;
+  max-width: 376px;
+  line-height: 30px;
+  margin-bottom: 29px;
+}
+@media (max-width: 1200px) {
+  .mockups .text p {
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+.mockups .text button {
+  background: hsl(180, 66%, 49%);
+  color: white;
+  border-radius: 20px;
+  padding: 9px 23px;
+  border: none;
+  cursor: pointer;
+}
+.mockups .text button:hover {
+  opacity: 0.8;
+  transition: 0.5s;
+}
+@media (max-width: 1200px) {
+  .mockups .text button {
+    margin: auto;
+  }
+}
+
+.from {
+  background-color: #eff1f7;
+  padding: 60px;
+}
+@media (max-width: 1200px) {
+  .from {
+    padding: 30px;
+  }
+}
+.from form {
+  background-image: url("../images/b.svg");
+  background-color: hsl(257, 27%, 26%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  height: 160px;
+  border-radius: 4px;
+  transform: translateY(-137px);
+}
+@media (max-width: 1200px) {
+  .from form {
+    transform: translateY(-115px);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+}
+.from form input {
+  padding: 10px;
+  width: 50%;
+}
+@media (max-width: 1200px) {
+  .from form input {
+    width: 100%;
+  }
+}
+.from form button {
+  background: hsl(180, 66%, 49%);
+  color: white;
+  border-radius: 20px;
+  padding: 9px 23px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 12px;
+}
+@media (max-width: 1200px) {
+  .from form button {
+    width: 100%;
+  }
+}
+.from form button:hover {
+  opacity: 0.8;
+  transition: 0.5s;
+}
+.from div {
+  display: block;
+  margin-top: -110px;
+}
+@media (max-width: 1200px) {
+  .from div {
+    margin-top: -100px;
+  }
+}
+.from div span {
+  display: flex;
+  width: 100%;
+  padding: 12px;
+  background-color: white;
+  align-items: center;
+  margin-bottom: 10px;
+}
+@media (max-width: 1200px) {
+  .from div span {
+    display: flex;
+    padding: 12px;
+    background-color: white;
+    margin-bottom: 10px;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 15px;
+  }
+}
+.from div span p:first-of-type {
+  flex: 1;
+}
+.from div span p:nth-of-type(2) {
+  color: hsl(180, 66%, 49%);
+  margin-right: 10px;
+}
+.from div span button {
+  background: hsl(180, 66%, 49%);
+  color: white;
+  border-radius: 20px;
+  padding: 9px 23px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 10px;
+  transition: 0.5S;
+}
+.from div span button:hover {
+  background-color: hsl(257, 27%, 26%);
+}
+
+.Advanced_Statistics {
+  background-color: #eff1f7;
+  padding: 60px 60px 100px;
+  text-align: center;
+}
+.Advanced_Statistics p {
+  color: hsl(257, 7%, 63%);
+  max-width: 500px;
+  margin: auto;
+}
+.Advanced_Statistics .boxs {
+  display: flex;
+  margin-top: 30px;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+}
+@media (max-width: 1200px) {
+  .Advanced_Statistics .boxs {
+    flex-direction: column;
+  }
+}
+.Advanced_Statistics .boxs .box {
+  background-color: white;
+  border-radius: 4px;
+  text-align: left;
+  padding: 30px 20px;
+  position: relative;
+}
+@media (max-width: 1200px) {
+  .Advanced_Statistics .boxs .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+.Advanced_Statistics .boxs .box div {
+  border-radius: 50%;
+  background-color: hsl(255, 11%, 22%);
+  width: fit-content;
+  height: fit-content;
+  padding: 10px;
+  padding: 8px 10px;
+  transform: translateY(-63px);
+}
+.Advanced_Statistics .boxs .box h3 {
+  margin-top: -35px;
+  margin-bottom: 20px;
+}
+.Advanced_Statistics .boxs .box p {
+  font-weight: 600;
+  line-height: 24px;
+}
+.Advanced_Statistics .boxs .box:first-of-type::before, .Advanced_Statistics .boxs .box:nth-of-type(2)::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 50px;
+  height: 5px;
+  left: 100%;
+  background-color: hsl(180, 66%, 49%);
+}
+@media (max-width: 1200px) {
+  .Advanced_Statistics .boxs .box:first-of-type::before, .Advanced_Statistics .boxs .box:nth-of-type(2)::after {
+    top: 100%;
+    width: 5px;
+    height: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+.Advanced_Statistics .boxs .box:nth-of-type(2) {
+  transform: translateY(33px);
+}
+.Advanced_Statistics .boxs .box:nth-of-type(3) {
+  transform: translateY(65px);
+}
+
+.boost {
+  background-color: hsl(257, 27%, 26%);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  background-image: url("../images/b.svg");
+  background-size: cover;
+}
+.boost button {
+  background: hsl(180, 66%, 49%);
+  color: white;
+  border-radius: 20px;
+  padding: 9px 23px;
+  border: none;
+  cursor: pointer;
+}
+.boost button:hover {
+  opacity: 0.8;
+  transition: 0.5s;
+}
+@media (max-width: 1200px) {
+  .boost button {
+    margin: auto;
+  }
+}
+
+.footer {
+  display: flex;
+  background-color: hsl(260, 8%, 14%);
+  padding: 60px;
+}
+@media (max-width: 1200px) {
+  .footer {
+    padding: 30Px;
+    display: block;
+    text-align: center;
+  }
+}
+.footer .one {
+  flex-basis: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media (max-width: 1200px) {
+  .footer .one {
+    justify-content: center;
+  }
+}
+@media (max-width: 1200px) {
+  .footer .one svg {
+    margin: 25px auto;
+  }
+}
+.footer .one svg path {
+  fill: white;
+}
+.footer .tow {
+  display: flex;
+  justify-content: space-evenly;
+  flex-basis: 60%;
+}
+@media (max-width: 1200px) {
+  .footer .tow {
+    display: block;
+  }
+}
+.footer .tow ul li {
+  height: 25px;
+}
+.footer .tow ul li a {
+  color: hsl(257, 7%, 63%);
+}
+.footer .tow ul li a:hover {
+  color: hsl(180, 66%, 49%);
+}
+.footer .tow ul li a.activ {
+  color: white;
+}
+.footer .three {
+  display: flex;
+  gap: 15px;
+  cursor: pointer;
+}
+@media (max-width: 1200px) {
+  .footer .three {
+    width: 100%;
+    margin-top: 20px;
+    justify-content: center;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
