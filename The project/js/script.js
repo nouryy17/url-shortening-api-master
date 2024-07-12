@@ -13,17 +13,22 @@ function toggleActivClass(clickEle) {
 }
 
 
-let newURL = document.getElementById("shorturl");
-let coptButton = document.getElementById("copy");
+// let newURL = document.getElementById("shorturl");
+// let coptButton = document.getElementById("copy");
 
-coptButton.onclick = ()=>{
-    newURL.select();
+// coptButton.onclick = ()=>{
+//     newURL.select();
 
-    window.navigator.clipboard.writeText(newURL.value);
+//     window.navigator.clipboard.writeText(newURL.value);
+// }
+
+const shortenButten=document.querySelector(".from form button.shorten")
+const inputEmail=document.querySelector(".form form input")
+const boxShortEmail=document.querySelector(".from from .short_links")
+
+
+shortenButten.addEventListener("click",function () {
+if (inputEmail.value="") {
+     console.log("inputEmail.value")
 }
-
-
-
-
-
-
+})
