@@ -46,6 +46,11 @@ a {
   }
 }
 
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400, 500;
+}
+
 nav {
   height: 70px;
   display: flex;
@@ -69,9 +74,8 @@ nav div {
     top: 70px;
     padding: 10px;
     background-color: hsl(257, 27%, 26%);
-    height: 400px;
+    height: fit-content;
     z-index: 3;
-    width: 200Px;
     width: 350px;
     border-radius: 4px;
     left: 50%;
@@ -93,6 +97,7 @@ nav div ul {
     height: 50%;
     border-bottom: 1px solid hsl(257, 7%, 63%);
     margin-bottom: 30px;
+    margin: 0;
   }
 }
 nav div ul li {
@@ -110,11 +115,31 @@ nav div ul li {
   }
 }
 nav div ul li:hover a {
-  color: hsl(257, 27%, 26%);
+  color: hsl(255, 11%, 22%);
+  font-weight: bold;
+}
+@media (max-width: 1200px) {
+  nav div ul li:hover a {
+    color: hsl(0, 0%, 75%);
+  }
 }
 nav div ul li a {
   color: hsl(0, 0%, 75%);
   font-weight: bold;
+}
+@media (max-width: 1200px) {
+  nav div ul li a {
+    color: white;
+  }
+}
+nav div span button {
+  cursor: pointer;
+  font-weight: bold;
+}
+@media (max-width: 1200px) {
+  nav div span button {
+    color: white;
+  }
 }
 @media (max-width: 1200px) {
   nav div span {
@@ -122,7 +147,7 @@ nav div ul li a {
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
-    height: 50%;
+    height: 150px;
   }
 }
 nav div span .tow {
@@ -139,7 +164,7 @@ nav div span .tow:hover {
 }
 @media (max-width: 1200px) {
   nav div span .tow {
-    margin: auto;
+    margin: 10px;
     display: block;
   }
 }
@@ -183,6 +208,7 @@ nav .svg .activ {
     justify-content: center;
     margin: 0;
     height: 780px;
+    margin-bottom: 50px;
   }
 }
 .mockups .img {
@@ -256,11 +282,41 @@ nav .svg .activ {
 .from {
   background-color: #eff1f7;
   padding: 60px;
+  height: fit-content;
 }
 @media (max-width: 1200px) {
   .from {
     padding: 30px;
   }
+}
+.from .short_links > div {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  height: 60px;
+  padding: 10px;
+  justify-content: space-between;
+}
+.from .short_links > div span {
+  width: fit-content;
+  padding: 7px;
+  color: white;
+  font-weight: bold;
+  margin: 0;
+  background: hsl(180, 66%, 49%);
+  color: white;
+  border-radius: 20px;
+  padding: 9px 23px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.from .short_links > div span:hover {
+  opacity: 0.8;
+  transition: 0.5s;
+}
+.from .short_links > div p:nth-of-type(2) {
+  color: hsl(180, 66%, 49%);
 }
 .from form {
   background-image: url("../images/b.svg");
