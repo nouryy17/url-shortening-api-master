@@ -15,7 +15,7 @@ function toggleActivClass(clickEle) {
 const shortenButten=document.querySelector(".from form button.shorten")
 const inputEmail=document.getElementById("longurl")
 const boxShortEmail=document.querySelector(".from  .short_links")
-console.log(boxShortEmail)
+
 
 shortenButten.addEventListener("click",function (ele) {
     ele.preventDefault()
@@ -44,7 +44,16 @@ function createDivShortEmial(email) {
     shortenURL(inputEmail.value,p2)
     p.innerHTML=email
     span.innerHTML="Copy" 
-
+    // span.setAttribute('onclick', 'copylink(spanCoby)')
+    // spanCoby.addEventListener("click",copylink(span))
+    let lic=document.querySelector(".from  .short_links div .tow")
+    let rr=lic.value
+    console.log(lic)
+    span.addEventListener("click",function () {
+       span.innerHTML="Copied"
+       span.style.backgroundColor="hsl(260, 8%, 14%)"
+       navigator.clipboard.writeText(p2.value)
+    })
 }
 
 async function shortenURL(longUrl,p2) {
@@ -58,5 +67,4 @@ async function shortenURL(longUrl,p2) {
     const shortUrl = await response.text();
     p2.innerHTML=shortUrl
   }
-  
 
