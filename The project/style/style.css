@@ -315,7 +315,7 @@ nav .svg .activ {
   opacity: 0.8;
   transition: 0.5s;
 }
-.from .short_links > div p:nth-of-type(2) {
+.from .short_links > div p.tow {
   color: hsl(180, 66%, 49%);
 }
 .from form {
