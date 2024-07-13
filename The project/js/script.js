@@ -41,7 +41,22 @@ function createDivShortEmial(email) {
     div.appendChild(p2)
     div.appendChild(span)
     p2.classList.add("tow")
+    shortenURL(inputEmail.value,p2)
     p.innerHTML=email
-    p2.innerHTML=email
     span.innerHTML="Copy" 
+
 }
+
+async function shortenURL(longUrl,p2) {
+    const apiUrl = `https://tinyurl.com/api-create.php?url=${encodeURIComponent(longUrl)}`;
+  
+    const response = await fetch(apiUrl);
+    if (!response.ok) {
+      throw new Error('Failed to shorten URL');
+    }
+  
+    const shortUrl = await response.text();
+    p2.innerHTML=shortUrl
+  }
+  
+
