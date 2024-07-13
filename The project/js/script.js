@@ -14,22 +14,24 @@ function toggleActivClass(clickEle) {
 
 const shortenButten=document.querySelector(".from form button.shorten")
 const inputEmail=document.getElementById("longurl")
-const boxShortEmail=document.querySelector(".from from .short_links")
-
+const boxShortEmail=document.querySelector(".from  .short_links")
+console.log(boxShortEmail)
 
 shortenButten.addEventListener("click",function (ele) {
     ele.preventDefault()
+    boxShortEmail.innerHTML=""
 if (inputEmail.value==="") {
-console.log(inputEmail)
     inputEmail.style.outline="2px solid red"
 }
 if (inputEmail.value!=="") {
-    console.log("ddddddddddddddddddddddd")
     createDivShortEmial(inputEmail.value)
+    inputEmail.value=""
+
 }
 })
 function createDivShortEmial(email) {
-    email.style.outline="none"
+    console.log("ddddddddddddddddddddddd")
+    inputEmail.style.outline="none"
     let div=document.createElement("div")
     let p=document.createElement("p")
     let p2=document.createElement("p")
@@ -39,7 +41,7 @@ function createDivShortEmial(email) {
     div.appendChild(p2)
     div.appendChild(span)
     p2.classList.add("tow")
-    p.textContent(email)
-    p2.textContent(email)
-    span.textContent("Copy")  
+    p.innerHTML=email
+    p2.innerHTML=email
+    span.innerHTML="Copy" 
 }
