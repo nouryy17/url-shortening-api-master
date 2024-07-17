@@ -64,7 +64,7 @@ nav div {
   height: 100%;
   align-items: center;
 }
-@media (max-width: 1200px) {
+@media (max-width: 991px) {
   nav div {
     display: none;
   }
@@ -92,7 +92,7 @@ nav div ul {
   height: 100%;
   margin-left: 15px;
 }
-@media (max-width: 1200px) {
+@media (max-width: 991px) {
   nav div ul {
     height: 50%;
     border-bottom: 1px solid hsl(257, 7%, 63%);
@@ -107,18 +107,23 @@ nav div ul li {
   justify-content: center;
   transition: 0.5s all;
 }
-@media (max-width: 1200px) {
+@media (max-width: 991px) {
   nav div ul li {
     width: 100%;
     height: 50px;
     border: none;
   }
 }
+@media (min-width: 991px) {
+  nav div ul li {
+    width: 14%;
+  }
+}
 nav div ul li:hover a {
   color: hsl(255, 11%, 22%);
   font-weight: bold;
 }
-@media (max-width: 1200px) {
+@media (max-width: 991px) {
   nav div ul li:hover a {
     color: hsl(0, 0%, 75%);
   }
@@ -127,7 +132,7 @@ nav div ul li a {
   color: hsl(0, 0%, 75%);
   font-weight: bold;
 }
-@media (max-width: 1200px) {
+@media (max-width: 991px) {
   nav div ul li a {
     color: white;
   }
@@ -136,12 +141,12 @@ nav div span button {
   cursor: pointer;
   font-weight: bold;
 }
-@media (max-width: 1200px) {
+@media (max-width: 991px) {
   nav div span button {
     color: white;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 991px) {
   nav div span {
     display: flex;
     flex-direction: column;
@@ -162,7 +167,7 @@ nav div span .tow:hover {
   opacity: 0.8;
   transition: 0.5s;
 }
-@media (max-width: 1200px) {
+@media (max-width: 991px) {
   nav div span .tow {
     margin: 10px;
     display: block;
@@ -175,7 +180,7 @@ nav div span .one {
   margin-bottom: 0;
   margin-right: 10px;
 }
-@media (max-width: 1200px) {
+@media (max-width: 991px) {
   nav div span .one {
     background-color: transparent;
     margin: auto;
@@ -184,7 +189,7 @@ nav div span .one {
 nav .svg {
   cursor: pointer;
 }
-@media (min-width: 1200px) {
+@media (min-width: 991px) {
   nav .svg {
     display: none;
   }
@@ -199,16 +204,20 @@ nav .svg .activ {
   overflow: hidden;
   padding: 60px 0;
   justify-content: space-between;
-  height: 780px;
+  height: fit-content;
 }
-@media (max-width: 1200px) {
+@media (max-width: 991px) {
   .mockups {
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
     margin: 0;
-    height: 780px;
     margin-bottom: 50px;
+  }
+}
+@media (max-width: 991px) {
+  .mockups {
+    height: fit-content;
   }
 }
 .mockups .img {
@@ -226,7 +235,6 @@ nav .svg .activ {
 }
 .mockups .text {
   flex-basis: 70%;
-  font-family: [Public Sans];
 }
 @media (max-width: 1200px) {
   .mockups .text {
@@ -246,6 +254,11 @@ nav .svg .activ {
     text-align: center;
     margin: auto;
     margin-bottom: 10px;
+  }
+}
+@media (min-width: 991px) {
+  .mockups .text h1 {
+    margin-top: 60px;
   }
 }
 .mockups .text p {
@@ -278,11 +291,17 @@ nav .svg .activ {
     margin: auto;
   }
 }
+@media (min-width: 991px) {
+  .mockups .text button {
+    margin-top: 20px;
+  }
+}
 
 .from {
   background-color: #eff1f7;
   padding: 60px;
   height: fit-content;
+  margin-top: 100px;
 }
 @media (max-width: 1200px) {
   .from {
